@@ -63,6 +63,7 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.compose.material.icons.extended)
     implementation(libs.androidx.navigation.compose)
 
     // Network
@@ -73,9 +74,6 @@ dependencies {
     implementation(libs.moshi)
     kapt(libs.moshi.codegen)
 
-    // Image Loading
-    implementation(libs.coil)
-
     // Dependency Injection
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
@@ -85,6 +83,11 @@ dependencies {
     implementation(libs.room.runtime)
     kapt(libs.room.compiler)
     implementation(libs.room.ktx)
+
+    // Media3 / ExoPlayer
+    implementation(libs.media3.exoplayer)
+    implementation(libs.media3.exoplayer.hls)
+    implementation(libs.media3.ui)
 
     // Testing
     testImplementation(libs.junit)
